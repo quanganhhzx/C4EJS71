@@ -1,106 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="css.css" />
-  </head>
-  <body>
-    <i
-      ><center><h1>Hello world</h1></center></i
-    >
-    <h2>Welcome C4EJS71</h2>
-    <h3>This is tag h3</h3>
-    <h4>This is tag h4</h4>
-    <h5>This is tag h5</h5>
-    <h6>This is tag h6</h6>
-    <a
-      href="https://www.w3schools.com/js/js_array_iteration.asp"
-      target="_blank"
-      >Click me</a
-    >
-    <br>
-    <img
-      src="https://www.gocbao.com/wp-content/uploads/2020/04/hinh-nen-full-hd-1080-bai-bien-xanh-ngat_022854175-1.jpg"
-      alt="" width="300" title="Hello SEA"
-    />
+</head>
+<body>
+    <h1 onclick="alert('Hello world')">HTML Events</h1>
 
-    <p>Hello</p>
-    <p>Hello</p>
-    <div>Helloooooooooooooooooooooooooooooooooo</div>
-    <dl>
-      <dt>ádas</dt>
-      <dd>what happen</dd>
-      <dt>ádas</dt>
-      <dd>what happen</dd>
+    <p id="p1" onclick="document.getElementById('p1').style.color='red'">Đây là đoạn văn 1</p>
+    <div id="div1" onclick="document.getElementById('div1').innerHTML = 'Hello Hello'">Đây là thẻ div</div>
+   
+   
+    <div onclick="welcome();changeColor(event)">WHat</div>
+    <button onclick="welcome()" oncontextmenu="alert('ádgjhasgdja')">Click ME</button>
+  <div onclick="changeColor(event)">Change color 1</div>
 
-    </dl>
-    <ul type="square">
-      <li>hello</li>
-      <li>hello</li>
-      <li>hello</li>
+  <button onclick="hiddenButton(event)">1</button>
+  <button onclick="hiddenButton(event)">2</button>
+  <button onclick="hiddenButton(event)">3</button>
+  <button onclick="hiddenButton(event)">4</button>
+  <button onclick="hiddenButton(event)">5</button>
 
-    </ul>
-    <ol>
-      <li>hello</li>
-      <li>
-        <ol type="a">
-          <li>what</li>
-          <li>what</li>
+  
 
-        </ol>
-      </li>
-      <li>hello</li>
-      <li>hello</li>
-
-    </ol>
-    <table>
-      <thead>
-        <tr>
-          <th>Tên sinh viên</th>
-          <th>Tuổi</th>
-          <th>Trường</th>
-          <th>.</th>
-
-        </tr>
-
-      </thead>
-      <body>
-        <tr>
-          <td>
-            Quang Anh
-          </td>
-          <td>22</td>
-          <td>Kinh Doanh Và Công nghệ</td>
-          <td>.</td>
-        </tr>
-        <tr>
-          <td>
-            Văn Thuận
-          </td>
-          <td>22</td>
-          <td>Kinh Doanh Và Công nghệ</td>
-
-        </tr>
-        <tr>
-          <td>
-            Minh Hiếu
-          </td>
-          <td>22</td>
-          <td>Kinh Doanh Và Công nghệ</td>
-
-        </tr>
-        <tr>
-          <td colspan="2">Sum: $180</td>
-        </tr>
-
-      </body>
-      <tfoot>
-
-      </tfoot>
-    </table>
-
-
-  </body>
+  
+    <script src="events.js"></script>
+</body>
 </html>
